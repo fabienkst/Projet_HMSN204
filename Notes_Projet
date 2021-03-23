@@ -1,0 +1,16 @@
+étapes Projet:
+- Diagrammes UML
+- Choix de la base de données
+- Biopython
+	- Alignement par paires
+	- Comparaison avec BLAST
+
+Activités:
+- Diagramme de Gantt
+- Site de dépôt: Git
+- choix SGBD
+- Implantation de la base de données et peuplement
+- Référentiels de valeur: PO et PATO
+- Jeu de requêtes
+- Traitements BioPython
+
