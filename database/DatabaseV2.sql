@@ -6,7 +6,6 @@ DROP TABLE Gene;
 DROP TABLE Term;
 DROP TABLE Vocabular;
 DROP TABLE Plant;
-DROP TABLE Plate;
 DROP TABLE Genotype;
 DROP TABLE Medium;
 
