@@ -19,7 +19,7 @@ CREATE table Medium(
 
 CREATE table Genotype(
 	ID varchar(5) primary key,
-	Def varchar(15)
+	Def varchar(100),
 );
 
 
@@ -29,7 +29,7 @@ CREATE TABLE Plant(
 	pg INT NOT NULL,
 	plate varchar(8),
 	IDgen varchar(5),
-	IDmedium varchar(9),
+	IDmedium varchar(9),	
 	FOREIGN KEY (IDgen)
 		REFERENCES Genotype(ID)
 		ON UPDATE CASCADE,

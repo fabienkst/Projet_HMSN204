@@ -20,7 +20,7 @@ CREATE table Medium(
 
 CREATE table Genotype(
 	ID varchar(5) primary key,
-	Def varchar(15)
+	Def varchar(100)
 );
 
 
