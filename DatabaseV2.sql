@@ -26,7 +26,7 @@ CREATE table Genotype(
 
 CREATE TABLE Plant( 
 	ID varchar(5) primary key,
-	group varchar(10),
+	groupe varchar(10),
 	pg INT NOT NULL,
 	plate varchar(8),
 	IDgen varchar(5),
