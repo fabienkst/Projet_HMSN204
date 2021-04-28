@@ -15,7 +15,7 @@ else:
 	file.readline()
 	for ligne in file.readlines():
 		data=ligne.split(";")
-		table_plant.write(data[3]+";"+data[0]+";"+data[8]+";"+data[9]+";"+data[1]+"\n")
+		table_plant.write(data[3]+";"+data[8]+";"+data[9]+";"+data[2]+";"+data[0]+";"+data[1]+"\n")
 		for i in [4,5,6,7,10,11]:
 			table_mesure.write(str(i)+";"+data[3]+";"+data[i]+"\n")
 		table_mesure.write(str(12)+";"+data[3]+";"+data[12])
