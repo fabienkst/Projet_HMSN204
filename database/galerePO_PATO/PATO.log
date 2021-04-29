@@ -1,0 +1,238 @@
+0 : Class ID
+1 : Preferred Label
+2 : Synonyms
+3 : Definitions
+4 : Obsolete
+5 : CUI
+6 : Semantic Types
+7 : Parents
+8 : acts upstream of
+9 : acts upstream of or within
+10 : "acts upstream of or within
+11 :  negative effect"
+12 : "acts upstream of or within
+13 :  positive effect"
+14 : "acts upstream of
+15 :  negative effect"
+16 : "acts upstream of
+17 :  positive effect"
+18 : bearer of
+19 : capable of
+20 : capable of negatively regulating
+21 : capable of part of
+22 : capable of positively regulating
+23 : capable of regulating
+24 : causal agent in process
+25 : causal relation between entities
+26 : causal relation between material entity and a process
+27 : causal relation between processes
+28 : causally downstream of
+29 : causally downstream of or within
+30 : causally influenced by
+31 : causally influences
+32 : causally related to
+33 : causally upstream of
+34 : causally upstream of or within
+35 : "causally upstream of or within
+36 :  negative effect"
+37 : "causally upstream of or within
+38 :  positive effect"
+39 : "causally upstream of
+40 :  negative effect"
+41 : "causally upstream of
+42 :  positive effect"
+43 : consider
+44 : contains process
+45 : correlates_with
+46 : database_cross_reference
+47 : decreased_in_magnitude_relative_to
+48 : definition
+49 : depends on
+50 : developmentally contributes to
+51 : developmentally preceded by
+52 : developmentally related to
+53 : developmentally succeeded by
+54 : develops from
+55 : develops into
+56 : different_in_magnitude_relative_to
+57 : directly negatively regulated by
+58 : directly negatively regulates
+59 : directly negatively regulates activity of
+60 : directly positively regulated by
+61 : directly positively regulates
+62 : directly positively regulates activity of
+63 : directly regulated by
+64 : directly regulates
+65 : directly regulates activity of
+66 : directly_associated_with
+67 : enabled by
+68 : enables
+69 : enables subfunction
+70 : ends after
+71 : functionally related to
+72 : has component
+73 : has component activity
+74 : has component process
+75 : has developmental contribution from
+76 : has developmental potential involving
+77 : has effector activity
+78 : has input
+79 : has negative regulatory component activity
+80 : has part
+81 : has part structure that is capable of
+82 : has part that occurs in
+83 : has participant
+84 : has positive regulatory component activity
+85 : has potential to develop into
+86 : has potential to developmentally contribute to
+87 : has potential to directly develop into
+88 : has regulatory component activity
+89 : has_alternative_id
+90 : has_broad_synonym
+91 : has_cross_section
+92 : has_dividend_entity
+93 : has_dividend_quality
+94 : has_divisor_entity
+95 : has_divisor_quality
+96 : has_exact_synonym
+97 : has_narrow_synonym
+98 : has_obo_format_version
+99 : has_obo_namespace
+100 : has_ratio_quality
+101 : has_related_synonym
+102 : has_relative_magnitude
+103 : helper property (not for use in curation)
+104 : http://data.bioontology.org/metadata/obo/part_of
+105 : http://data.bioontology.org/metadata/prefixIRI
+106 : http://data.bioontology.org/metadata/treeView
+107 : http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate
+108 : http://purl.obolibrary.org/obo/go#gocheck_do_not_manually_annotate
+109 : http://purl.obolibrary.org/obo/go#goslim_agr
+110 : http://purl.obolibrary.org/obo/go#goslim_aspergillus
+111 : http://purl.obolibrary.org/obo/go#goslim_candida
+112 : http://purl.obolibrary.org/obo/go#goslim_chembl
+113 : http://purl.obolibrary.org/obo/go#goslim_drosophila
+114 : http://purl.obolibrary.org/obo/go#goslim_flybase_ribbon
+115 : http://purl.obolibrary.org/obo/go#goslim_generic
+116 : http://purl.obolibrary.org/obo/go#goslim_metagenomics
+117 : http://purl.obolibrary.org/obo/go#goslim_mouse
+118 : http://purl.obolibrary.org/obo/go#goslim_pir
+119 : http://purl.obolibrary.org/obo/go#goslim_plant
+120 : http://purl.obolibrary.org/obo/go#goslim_pombe
+121 : http://purl.obolibrary.org/obo/go#goslim_yeast
+122 : http://purl.obolibrary.org/obo/IAO_0000111
+123 : http://purl.obolibrary.org/obo/IAO_0000112
+124 : http://purl.obolibrary.org/obo/IAO_0000114
+125 : http://purl.obolibrary.org/obo/IAO_0000116
+126 : http://purl.obolibrary.org/obo/IAO_0000117
+127 : http://purl.obolibrary.org/obo/IAO_0000118
+128 : http://purl.obolibrary.org/obo/IAO_0000119
+129 : http://purl.obolibrary.org/obo/IAO_0000231
+130 : http://purl.obolibrary.org/obo/IAO_0000232
+131 : http://purl.obolibrary.org/obo/IAO_0000233
+132 : http://purl.obolibrary.org/obo/IAO_0000412
+133 : http://purl.obolibrary.org/obo/IAO_0000424
+134 : http://purl.obolibrary.org/obo/IAO_0000589
+135 : http://purl.obolibrary.org/obo/IAO_0000600
+136 : http://purl.obolibrary.org/obo/IAO_0000700
+137 : http://purl.obolibrary.org/obo/pato#abnormal_slim
+138 : http://purl.obolibrary.org/obo/pato#absent_slim
+139 : http://purl.obolibrary.org/obo/pato#attribute_slim
+140 : http://purl.obolibrary.org/obo/pato#cell_quality
+141 : http://purl.obolibrary.org/obo/pato#disposition_slim
+142 : http://purl.obolibrary.org/obo/pato#hpo_slim
+143 : http://purl.obolibrary.org/obo/pato#mpath_slim
+144 : http://purl.obolibrary.org/obo/pato#relational_slim
+145 : http://purl.obolibrary.org/obo/pato#scalar_slim
+146 : http://purl.obolibrary.org/obo/pato#value_slim
+147 : http://purl.obolibrary.org/obo/ro/subsets#ro-eco
+148 : http://purl.obolibrary.org/obo/RO_0001900
+149 : http://purl.obolibrary.org/obo/RO_0002161
+150 : http://purl.obolibrary.org/obo/RO_0002259
+151 : http://purl.obolibrary.org/obo/RO_0002473
+152 : http://purl.obolibrary.org/obo/RO_0002575
+153 : http://purl.obolibrary.org/obo/RO_0004049
+154 : http://purl.obolibrary.org/obo/RO_0004050
+155 : http://purl.obolibrary.org/obo/RO_0040042
+156 : http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
+157 : http://purl.obolibrary.org/obo/valid_for_go_gp2term
+158 : http://purl.obolibrary.org/obo/valid_for_go_ontology
+159 : http://purl.obolibrary.org/obo/valid_for_gocam
+160 : http://purl.org/dc/elements/1.1/creator
+161 : http://purl.org/dc/elements/1.1/date
+162 : http://purl.org/dc/elements/1.1/description
+163 : http://purl.org/dc/elements/1.1/source
+164 : http://purl.org/dc/elements/1.1/title
+165 : http://purl.org/dc/terms/creator
+166 : http://purl.org/dc/terms/license
+167 : http://purl.org/dc/terms/source
+168 : http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+169 : http://www.geneontology.org/formats/oboInOwl#created_by
+170 : http://www.geneontology.org/formats/oboInOwl#creation_date
+171 : http://www.geneontology.org/formats/oboInOwl#default-namespace
+172 : http://www.geneontology.org/formats/oboInOwl#id
+173 : http://www.geneontology.org/formats/oboInOwl#is_class_level
+174 : http://www.geneontology.org/formats/oboInOwl#is_metadata_tag
+175 : http://www.w3.org/2000/01/rdf-schema#comment
+176 : http://www.w3.org/2000/01/rdf-schema#label
+177 : http://www.w3.org/2002/07/owl#deprecated
+178 : http://www.w3.org/2004/02/skos/core#notation
+179 : http://xmlns.com/foaf/0.1/page
+180 : immediately causally downstream of
+181 : immediately causally upstream of
+182 : immediately preceded by
+183 : immediately precedes
+184 : in_subset
+185 : increased_in_magnitude_relative_to
+186 : inheres in
+187 : inheres in part of
+188 : input of
+189 : interaction relation helper property
+190 : interacts with
+191 : inversely_associated_with
+192 : involved in
+193 : involved in negative regulation of
+194 : involved in or involved in regulation of
+195 : involved in positive regulation of
+196 : involved in regulation of
+197 : is a defining property chain axiom
+198 : is a defining property chain axiom where second argument is reflexive
+199 : is active in
+200 : is kinase activity
+201 : is opposite of
+202 : is_magnitude_of
+203 : is_measurement_of
+204 : is_unit_of
+205 : mereotopologically related to
+206 : molecular interaction relation helper property
+207 : molecularly interacts with
+208 : negatively regulated by
+209 : negatively regulates
+210 : occurs in
+211 : overlaps
+212 : part of
+213 : part of structure that is capable of
+214 : participates in
+215 : phosphorylates
+216 : positively regulated by
+217 : positively regulates
+218 : preceded by
+219 : precedes
+220 : process has causal agent
+221 : realized_by
+222 : reciprocal_of
+223 : regulated by
+224 : regulates
+225 : regulates activity of
+226 : shorthand
+227 : similar_in_magnitude_relative_to
+228 : singly_occurring_form_of
+229 : subset_property
+230 : temporally related to
+231 : term replaced by
+232 : towards
+
+Nombre de ligne gardées : 1577
+Nombre ligne obsolètes : 971
+Nombre ligne bizarre :306
+Nombre moyen de colonnes par ligne : 223.64260686755432

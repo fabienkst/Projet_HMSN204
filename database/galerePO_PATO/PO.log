@@ -1,0 +1,200 @@
+0 : Class ID
+1 : Preferred Label
+2 : Synonyms
+3 : Definitions
+4 : Obsolete
+5 : CUI
+6 : Semantic Types
+7 : Parents
+8 : acts upstream of
+9 : acts upstream of or within
+10 : "acts upstream of or within
+11 :  negative effect"
+12 : "acts upstream of or within
+13 :  positive effect"
+14 : "acts upstream of
+15 :  negative effect"
+16 : "acts upstream of
+17 :  positive effect"
+18 : adjacent_to
+19 : capable of
+20 : capable of negatively regulating
+21 : capable of part of
+22 : capable of positively regulating
+23 : capable of regulating
+24 : causal agent in process
+25 : causal relation between entities
+26 : causal relation between material entity and a process
+27 : causal relation between processes
+28 : causally downstream of
+29 : causally downstream of or within
+30 : causally influenced by
+31 : causally influences
+32 : causally related to
+33 : causally upstream of
+34 : causally upstream of or within
+35 : "causally upstream of or within
+36 :  negative effect"
+37 : "causally upstream of or within
+38 :  positive effect"
+39 : "causally upstream of
+40 :  negative effect"
+41 : "causally upstream of
+42 :  positive effect"
+43 : consider
+44 : contained in
+45 : contains
+46 : contains process
+47 : database_cross_reference
+48 : definition
+49 : derives_by_manipulation_from
+50 : developmentally contributes to
+51 : developmentally preceded by
+52 : developmentally related to
+53 : developmentally succeeded by
+54 : develops from
+55 : develops into
+56 : directly negatively regulated by
+57 : directly negatively regulates
+58 : directly negatively regulates activity of
+59 : directly positively regulated by
+60 : directly positively regulates
+61 : directly positively regulates activity of
+62 : directly regulated by
+63 : directly regulates
+64 : directly regulates activity of
+65 : editor note
+66 : enabled by
+67 : enables
+68 : enables subfunction
+69 : ends after
+70 : evolutionarily related to
+71 : functionally related to
+72 : German synonym (exact)
+73 : has component
+74 : has component activity
+75 : has component process
+76 : has developmental contribution from
+77 : has developmental potential involving
+78 : has effector activity
+79 : has input
+80 : has negative regulatory component activity
+81 : has part
+82 : has part structure that is capable of
+83 : has part that occurs in
+84 : has participant
+85 : has positive regulatory component activity
+86 : has potential to develop into
+87 : has potential to developmentally contribute to
+88 : has potential to directly develop into
+89 : has regulatory component activity
+90 : has_alternative_id
+91 : has_broad_synonym
+92 : has_exact_synonym
+93 : has_narrow_synonym
+94 : has_obo_format_version
+95 : has_obo_namespace
+96 : has_related_synonym
+97 : has_scope
+98 : has_synonym_type
+99 : helper property (not for use in curation)
+100 : http://data.bioontology.org/metadata/obo/develops_from
+101 : http://data.bioontology.org/metadata/obo/part_of
+102 : http://data.bioontology.org/metadata/prefixIRI
+103 : http://data.bioontology.org/metadata/treeView
+104 : http://omv.ontoware.org/2005/05/ontology#useImports
+105 : http://purl.obolibrary.org/obo/IAO_0000111
+106 : http://purl.obolibrary.org/obo/IAO_0000112
+107 : http://purl.obolibrary.org/obo/IAO_0000114
+108 : http://purl.obolibrary.org/obo/IAO_0000117
+109 : http://purl.obolibrary.org/obo/IAO_0000118
+110 : http://purl.obolibrary.org/obo/IAO_0000119
+111 : http://purl.obolibrary.org/obo/IAO_0000231
+112 : http://purl.obolibrary.org/obo/IAO_0000412
+113 : http://purl.obolibrary.org/obo/IAO_0000589
+114 : http://purl.obolibrary.org/obo/po#Angiosperm
+115 : http://purl.obolibrary.org/obo/po#Arabidopsis
+116 : http://purl.obolibrary.org/obo/po#Bryophytes
+117 : http://purl.obolibrary.org/obo/po#Citrus
+118 : http://purl.obolibrary.org/obo/po#CL
+119 : http://purl.obolibrary.org/obo/po#Gymnosperms
+120 : http://purl.obolibrary.org/obo/po#Maize
+121 : http://purl.obolibrary.org/obo/po#Musa
+122 : http://purl.obolibrary.org/obo/po#Poaceae
+123 : http://purl.obolibrary.org/obo/po#Potato
+124 : http://purl.obolibrary.org/obo/po#Pteridophytes
+125 : http://purl.obolibrary.org/obo/po#reference
+126 : http://purl.obolibrary.org/obo/po#Rice
+127 : http://purl.obolibrary.org/obo/po#Tomato
+128 : http://purl.obolibrary.org/obo/po#TraitNet
+129 : http://purl.obolibrary.org/obo/RO_0001900
+130 : http://purl.org/dc/elements/1.1/source
+131 : http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+132 : http://www.geneontology.org/formats/oboInOwl#created_by
+133 : http://www.geneontology.org/formats/oboInOwl#creation_date
+134 : http://www.geneontology.org/formats/oboInOwl#default-namespace
+135 : http://www.geneontology.org/formats/oboInOwl#id
+136 : http://www.geneontology.org/formats/oboInOwl#saved-by
+137 : http://www.geneontology.org/formats/oboInOwl#source
+138 : http://www.w3.org/2000/01/rdf-schema#comment
+139 : http://www.w3.org/2000/01/rdf-schema#label
+140 : http://www.w3.org/2002/07/owl#deprecated
+141 : http://www.w3.org/2004/02/skos/core#notation
+142 : immediately causally downstream of
+143 : immediately causally upstream of
+144 : immediately preceded by
+145 : immediately precedes
+146 : in taxon
+147 : in_subset
+148 : input of
+149 : interaction relation helper property
+150 : interacts with
+151 : involved in
+152 : involved in negative regulation of
+153 : involved in or involved in regulation of
+154 : involved in positive regulation of
+155 : involved in regulation of
+156 : is a defining property chain axiom
+157 : is a defining property chain axiom where second argument is reflexive
+158 : is active in
+159 : is kinase activity
+160 : isolated from germplasm
+161 : Japanese synonym (exact)
+162 : located_in
+163 : location of
+164 : mereotopologically related to
+165 : molecular interaction relation helper property
+166 : molecularly interacts with
+167 : negatively regulated by
+168 : negatively regulates
+169 : occurs in
+170 : only in taxon
+171 : overlaps
+172 : part of
+173 : part of structure that is capable of
+174 : participates in
+175 : phosphorylates
+176 : Plural
+177 : positively regulated by
+178 : positively regulates
+179 : preceded by
+180 : precedes
+181 : process has causal agent
+182 : regulated by
+183 : regulates
+184 : regulates activity of
+185 : shorthand
+186 : Spanish synonym (exact)
+187 : spatially coextensive with
+188 : spatially disjoint from
+189 : subset_property
+190 : synonym_type_property
+191 : temporally related to
+192 : term replaced by
+193 : treat-xrefs-as-genus-differentia
+194 : treat-xrefs-as-is_a
+
+Nombre de ligne gardées : 182
+Nombre ligne obsolètes : 239
+Nombre ligne bizarre :1603
+Nombre moyen de colonnes par ligne : 191.92687747035572
