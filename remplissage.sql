@@ -6,7 +6,7 @@ FIELDS TERMINATED BY ';' LINES TERMINATED BY '\n' (IDfeature, IDplant, value);
 
 LOAD DATA LOCAL INFILE './table_plant.csv' 
 INTO TABLE Plant
-FIELDS TERMINATED BY ';' LINES TERMINATED BY '\n' (ID,IDgen,groupe,pg,IDmedium,IDmedium,plate);
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\n' (ID,IDgen,groupe,pg,IDmedium);
 
 
 

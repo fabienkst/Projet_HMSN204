@@ -7,8 +7,9 @@ DROP TABLE Term;
 DROP TABLE Vocabular;
 DROP TABLE Plant;
 DROP TABLE Genotype;
-DROP TABLE Medium;
 DROP TABLE Plate;
+DROP TABLE Medium;
+
 
 
 
@@ -25,13 +26,18 @@ CREATE table Genotype(
 	Def varchar(100)
 );
 
+CREATE TABLE Plate(
+	ID varchar(100) primary key,
+	IDmedium varchar(9)
+	);
+
 
 CREATE TABLE Plant( 
 	ID varchar(5) primary key,
 	groupe varchar(10),
 	pg INT NOT NULL,
+	IDplate varchar(100),
 	IDgen varchar(5),
-	IDplate varchar(100),	
 	FOREIGN KEY (IDgen)
 		REFERENCES Genotype(ID)
 		ON UPDATE CASCADE,
@@ -41,10 +47,7 @@ CREATE TABLE Plant(
 );
 
 
-CREATE TABLE Plate(
-	ID varchar(100) primary key,
-	IDmedium varchar(9)
-)
+
 
 CREATE table Vocabular(
 	ID varchar(15) primary key,
@@ -83,8 +86,10 @@ CREATE TABLE Associate(
 
 CREATE table Feature( 
 	ID varchar(5) primary key,
+	label varchar(20),
+	definition varchar(50),
+	unite varchar(10), /*A voir si on le met là ou dans Mesure !!!!!!!!!!*/
 	IDterm varchar(5),
-	intitule varchar(100),
 	FOREIGN KEY(IDterm)
 		REFERENCES Term(ID)
 		ON UPDATE CASCADE
