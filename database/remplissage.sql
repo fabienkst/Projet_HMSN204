@@ -1,19 +1,27 @@
-LOAD DATA LOCAL INFILE './table_mesure.csv' 
-INTO TABLE Mesure
-FIELDS TERMINATED BY ';' LINES TERMINATED BY '\n' (IDfeature, IDplant, value);
+INSERT INTO Genotype(ID,Def)
+VALUES
+('Col_0','Plante sauvage'),
+('nrt','NRT2.x : High-affinity nitrate transporters'),
+('sex1','SEX1 : Starch Excess Pyruvate phosphate dikinase'),
+('pgm','PGM : Phosphoglucomutase');
 
 
+INSERT INTO Medium(ID,Libelle, caracteristique)
+VALUES
+('Milieu_1','Carence Azote','0.5 mMNO3-'),
+('Milieu_2','Carence Azote/Carbone','0.5 mMNO3- + 1% saccharose (p/v)'),
+('Milieu_3','Standard','2.5 mMNO3-'),
+('Milieu_4','Saccharose','Standard + 1% saccharose (p/v)'),
+('Milieu_5','Microorganisme (PGPR)','Standard + microorganisme');
 
-LOAD DATA LOCAL INFILE './table_plant.csv' 
-INTO TABLE Plant
-FIELDS TERMINATED BY ';' LINES TERMINATED BY '\n' (ID,groupe,pg,IDplate,IDgen);
 
-
-
-LOAD DATA LOCAL INFILE './table_plate.csv'
-INTO TABLE Plate
-FIELDS TERMINATED BY ';' LINES TERMINATED BY '\n' (ID,IDmedium);
-
+INSERT INTO Vocabular(ID, def)
+VALUES
+('1', 'Plant Ontology'),
+('2', 'Phenotype And Trait Ontology'),
+('3', 'Flora Phenotype Ontology'),
+('4', 'Plant Trait Ontology'),
+('5', 'Brassica Ontology');
 
 
 INSERT INTO Feature(ID,label,definition,unite)
@@ -25,26 +33,6 @@ VALUES
 ('10','distanceFromHypocotyl','distance racine primaire - hypocotyle','cm'), 
 ('11','ShootArea','surface foliaire','cm2'), 
 ('12','clorophyll','teneur en chlorophylle','au (arbitrary unit)'); 
-
-
-
-INSERT INTO Genotype(ID,Def)
-VALUES
-('Col_0','Plante sauvage'),
-('nrt','NRT2.x : High-affinity nitrate transporters'),
-('sex1','SEX1 : Starch Excess Pyruvate phosphate dikinase'),
-('pgm','PGM : Phosphoglucomutase');
-
-
-
-INSERT INTO Medium(ID,Libelle, caracteristique)
-VALUES
-('Milieu_1','Carence Azote','0.5 mMNO3-'),
-('Milieu_2','Carence Azote/Carbone','0.5 mMNO3- + 1% saccharose (p/v)'),
-('Milieu_3','Standard','2.5 mMNO3-'),
-('Milieu_4','Saccharose','Standard + 1% saccharose (p/v)'),
-('Milieu_5','Microorganisme (PGPR)','Standard + microorganisme');
-
 
 
 INSERT INTO Term(ID, define,IDvoc)
@@ -63,6 +51,27 @@ VALUES
 
 
 
+
+
+LOAD DATA LOCAL INFILE './table_plate.csv'
+INTO TABLE Plate
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\n' (ID,IDmedium);
+
+
+LOAD DATA LOCAL INFILE './table_plant.csv' 
+INTO TABLE Plant
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\n' (ID,groupe,pg,IDplate,IDgen);
+
+
+
+LOAD DATA LOCAL INFILE './table_mesure.csv' 
+INTO TABLE Mesure
+FIELDS TERMINATED BY ';' LINES TERMINATED BY '\n' (IDfeature, IDplant, value);
+
+
+
+
+
 INSERT INTO Define(IDfeature, IDterm)
 VALUES
 ('4','PO_0009005'),
@@ -77,16 +86,26 @@ VALUES
 ('7','PATO 0000122'),
 ('7','FLOPO_0009325'),
 ('7','CO_348:2100002'),
-('10','primary root'),
+('10','CO_348:2100001'),
 ('10','PO_0020100'),
 ('11','PATO_0001323');
 
 
 
-INSERT INTO Vocabular(ID, def)
-VALUES
-('1', 'Plant Ontology'),
-('2', 'Phenotype And Trait Ontology'),
-('3', 'Flora Phenotype Ontology'),
-('4', 'Plant Trait Ontology'),
-('5', 'Brassica Ontology');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

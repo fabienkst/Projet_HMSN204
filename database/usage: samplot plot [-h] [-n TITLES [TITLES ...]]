@@ -1,0 +1,118 @@
+usage: samplot plot [-h] [-n TITLES [TITLES ...]] [-r REFERENCE] [-z Z] -b
+                    BAMS [BAMS ...] [-o OUTPUT_FILE] [--output_dir OUTPUT_DIR]
+                    -s START -e END -c CHROM [-w WINDOW] [-d MAX_DEPTH]
+                    [-t SV_TYPE] [-T TRANSCRIPT_FILE]
+                    [--transcript_filename TRANSCRIPT_FILENAME]
+                    [--max_coverage_points MAX_COVERAGE_POINTS]
+                    [-A ANNOTATION_FILES [ANNOTATION_FILES ...]]
+                    [--annotation_filenames ANNOTATION_FILENAMES [ANNOTATION_FILENAMES ...]]
+                    [--coverage_tracktype {stack,superimpose,none}] [-a]
+                    [-H PLOT_HEIGHT] [-W PLOT_WIDTH] [-q INCLUDE_MQUAL]
+                    [--separate_mqual SEPARATE_MQUAL] [-j]
+                    [--start_ci START_CI] [--end_ci END_CI]
+                    [--long_read LONG_READ] [--ignore_hp]
+                    [--min_event_size MIN_EVENT_SIZE]
+                    [--xaxis_label_fontsize XAXIS_LABEL_FONTSIZE]
+                    [--yaxis_label_fontsize YAXIS_LABEL_FONTSIZE]
+                    [--legend_fontsize LEGEND_FONTSIZE]
+                    [--annotation_fontsize ANNOTATION_FONTSIZE]
+                    [--common_insert_size] [--hide_annotation_labels]
+                    [--coverage_only] [--max_coverage MAX_COVERAGE]
+                    [--same_yaxis_scales] [--marker_size MARKER_SIZE]
+                    [--dpi DPI] [--zoom ZOOM] [--debug DEBUG]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -n TITLES [TITLES ...], --titles TITLES [TITLES ...]
+                        Space-delimited list of plot titles. Use quote marks
+                        to include spaces (i.e. "plot 1" "plot 2")
+  -r REFERENCE, --reference REFERENCE
+                        Reference file for CRAM, required if CRAM files used
+  -z Z, --z Z           Number of stdevs from the mean (default 4)
+  -b BAMS [BAMS ...], --bams BAMS [BAMS ...]
+                        Space-delimited list of BAM/CRAM file names
+  -o OUTPUT_FILE, --output_file OUTPUT_FILE
+                        Output file name/type. Defaults to
+                        {type}_{chrom}_{start}_{end}.png
+  --output_dir OUTPUT_DIR
+                        Output directory name. Defaults to working dir.
+                        Ignored if --output_file is set
+  -s START, --start START
+                        Start position of region/variant (add multiple for
+                        translocation/BND events)
+  -e END, --end END     End position of region/variant (add multiple for
+                        translocation/BND events)
+  -c CHROM, --chrom CHROM
+                        Chromosome (add multiple for translocation/BND events)
+  -w WINDOW, --window WINDOW
+                        Window size (count of bases to include in view),
+                        default(0.5 * len)
+  -d MAX_DEPTH, --max_depth MAX_DEPTH
+                        Max number of normal pairs to plot
+  -t SV_TYPE, --sv_type SV_TYPE
+                        SV type. If omitted, plot is created without variant
+                        bar
+  -T TRANSCRIPT_FILE, --transcript_file TRANSCRIPT_FILE
+                        GFF3 of transcripts
+  --transcript_filename TRANSCRIPT_FILENAME
+                        Name for transcript track
+  --max_coverage_points MAX_COVERAGE_POINTS
+                        number of points to plot in coverage axis (downsampled
+                        from region size for speed)
+  -A ANNOTATION_FILES [ANNOTATION_FILES ...], --annotation_files ANNOTATION_FILES [ANNOTATION_FILES ...]
+                        Space-delimited list of bed.gz tabixed files of
+                        annotations (such as repeats, mappability, etc.)
+  --annotation_filenames ANNOTATION_FILENAMES [ANNOTATION_FILENAMES ...]
+                        Space-delimited list of names for the tracks in
+                        --annotation_files
+  --coverage_tracktype {stack,superimpose,none}
+                        type of track to use for low MAPQ coverage plot.
+  -a, --print_args      Print commandline arguments
+  -H PLOT_HEIGHT, --plot_height PLOT_HEIGHT
+                        Plot height
+  -W PLOT_WIDTH, --plot_width PLOT_WIDTH
+                        Plot width
+  -q INCLUDE_MQUAL, --include_mqual INCLUDE_MQUAL
+                        Min mapping quality of reads to be included in plot
+                        (default 1)
+  --separate_mqual SEPARATE_MQUAL
+                        coverage from reads with MAPQ <= separate_mqual
+                        plotted in lighter grey. To disable, pass in negative
+                        value
+  -j, --json_only       Create only the json file, not the image plot
+  --start_ci START_CI   confidence intervals of SV first breakpoint (distance
+                        from the breakpoint). Must be a comma-separated pair
+                        of ints (i.e. 20,40)
+  --end_ci END_CI       confidence intervals of SV end breakpoint (distance
+                        from the breakpoint). Must be a comma-separated pair
+                        of ints (i.e. 20,40)
+  --long_read LONG_READ
+                        Min length of a read to be treated as a long-read
+                        (default 1000)
+  --ignore_hp           Choose to ignore HP tag in alignment files
+  --min_event_size MIN_EVENT_SIZE
+                        Min size of an event in long-read CIGAR to include
+                        (default 20)
+  --xaxis_label_fontsize XAXIS_LABEL_FONTSIZE
+                        Font size for X-axis labels (default 6)
+  --yaxis_label_fontsize YAXIS_LABEL_FONTSIZE
+                        Font size for Y-axis labels (default 6)
+  --legend_fontsize LEGEND_FONTSIZE
+                        Font size for legend labels (default 6)
+  --annotation_fontsize ANNOTATION_FONTSIZE
+                        Font size for annotation labels (default 6)
+  --common_insert_size  Set common insert size for all plots
+  --hide_annotation_labels
+                        Hide the label (fourth column text) from annotation
+                        files, useful for regions with many annotations
+  --coverage_only       Hide all reads and show only coverage
+  --max_coverage MAX_COVERAGE
+                        apply a maximum coverage cutoff. Unlimited by default
+  --same_yaxis_scales   Set the scales of the Y axes to the max of all
+  --marker_size MARKER_SIZE
+                        Size of marks on pairs and splits (default 3)
+  --dpi DPI             Dots per inches (pixel count, default 300)
+  --zoom ZOOM           Only show +- zoom amount around breakpoints, much
+                        faster for large regions. Ignored if region smaller
+                        than --zoom (default 500000)
+  --debug DEBUG         Print debug statements

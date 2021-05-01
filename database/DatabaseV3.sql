@@ -86,9 +86,9 @@ CREATE TABLE Associate(
 
 CREATE table Feature( 
 	ID varchar(5) primary key,
-	label varchar(20),
+	label varchar(50),
 	definition varchar(50),
-	unite varchar(10)
+	unite varchar(20)
 );
 
 
