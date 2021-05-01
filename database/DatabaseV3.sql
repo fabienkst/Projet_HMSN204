@@ -88,11 +88,7 @@ CREATE table Feature(
 	ID varchar(5) primary key,
 	label varchar(20),
 	definition varchar(50),
-	unite varchar(10), /*A voir si on le met là ou dans Mesure !!!!!!!!!!*/
-	IDterm varchar(5),
-	FOREIGN KEY(IDterm)
-		REFERENCES Term(ID)
-		ON UPDATE CASCADE
+	unite varchar(10)
 );
 
 
@@ -111,11 +107,11 @@ CREATE TABLE Mesure(
 
 
 CREATE TABLE Define(
-	IDgene varchar(10),
+	IDfeature varchar(10),
 	IDterm varchar(15),
-	primary key(IDgene,IDterm),
-	FOREIGN KEY (IDgene)
-		REFERENCES Gene(ID)
+	primary key(IDfeature,IDterm),
+	FOREIGN KEY (IDfeature)
+		REFERENCES Feature(ID)
 		ON UPDATE CASCADE,
 	FOREIGN KEY (IDterm)
 		REFERENCES Term(ID)

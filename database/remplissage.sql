@@ -9,22 +9,22 @@ INTO TABLE Plant
 FIELDS TERMINATED BY ';' LINES TERMINATED BY '\n' (ID,groupe,pg,IDplate,IDgen);
 
 
+
 LOAD DATA LOCAL INFILE './table_plate.csv'
 INTO TABLE Plate
 FIELDS TERMINATED BY ';' LINES TERMINATED BY '\n' (ID,IDmedium);
 
 
 
-INSERT INTO Feature(ID,label,definition,unite,IDterm)
+INSERT INTO Feature(ID,label,definition,unite)
 VALUES
-('0','PR length','longueur racine principale','cm',''), 
-('1','tortuosity','tortuosité racine primaire','none',''), 
-('2','RootArea','surface racinaire','cm2',''), 
-('3','LR length','longueur racines latérales','cm',''), 
-('4','distanceFromHypocotyl','distance racine primaire - hypocotyle','cm',''), 
-('5','ShootArea','surface foliaire','cm2',''), 
-('6','clorophyll','teneur en chlorophylle','au (arbitrary unit)',''); 
-
+('4','PR length','longueur racine principale','cm'), 
+('5','tortuosity','tortuosité racine primaire','none'), 
+('6','RootArea','surface racinaire','cm2'), 
+('7','LR length','longueur racines latérales','cm'), 
+('10','distanceFromHypocotyl','distance racine primaire - hypocotyle','cm'), 
+('11','ShootArea','surface foliaire','cm2'), 
+('12','clorophyll','teneur en chlorophylle','au (arbitrary unit)'); 
 
 
 
@@ -44,3 +44,49 @@ VALUES
 ('Milieu_3','Standard','2.5 mMNO3-'),
 ('Milieu_4','Saccharose','Standard + 1% saccharose (p/v)'),
 ('Milieu_5','Microorganisme (PGPR)','Standard + microorganisme');
+
+
+
+INSERT INTO Term(ID, define,IDvoc)
+VALUES
+('PO_0009005','root','1'), 
+('PO_0020127','primary root','1'),
+('PO_0020121','lateral root','1'),
+('PO 0025034','leaf','1'),
+('PATO 0000122','length','2'),
+('FLOPO_0009325','root length','3'),
+('TO_0001013','lateral root number','4'),
+('PATO_0001323','aera','2'),
+('PO_0020100','hypocotyl','1'),
+('CO_348:2100001','Primary root length','5'),
+('CO_348:2100002','Lateral root length','5');
+
+
+
+INSERT INTO Define(IDfeature, IDterm)
+VALUES
+('4','PO_0009005'),
+('4','PO_0020127'),
+('4','PATO 0000122'),
+('4','FLOPO_0009325'),
+('4','CO_348:2100001'),
+('6','PO_0009005'),
+('6','PATO_0001323'),
+('7','PO_0009005'),
+('7','PO_0020121'),
+('7','PATO 0000122'),
+('7','FLOPO_0009325'),
+('7','CO_348:2100002'),
+('10','primary root'),
+('10','PO_0020100'),
+('11','PATO_0001323');
+
+
+
+INSERT INTO Vocabular(ID, def)
+VALUES
+('1', 'Plant Ontology'),
+('2', 'Phenotype And Trait Ontology'),
+('3', 'Flora Phenotype Ontology'),
+('4', 'Plant Trait Ontology'),
+('5', 'Brassica Ontology');
