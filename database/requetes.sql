@@ -1,37 +1,41 @@
 ##Nombre de plantes dans une boîte 
 
 
-SELECT IDgen as Genotype, IDmedium as Milieu, plate, count(id) as Nbr
-FROM Plant
-Group by IDgen,IDmedium,plate ;
+SELECT IDplate, count(id) as Nbr 
+FROM Plant 
+Group by IDplate 
 
 
 ##Nombre de plantes en moyenne dans les boîtes
 
 
-SELECT avg(cnt.c) 
-FROM (SELECT count(ID) c FROM Plant Group by IDgen,IDmedium,plate ) cnt;
+SELECT avg(cnt.c) as Moyenne
+FROM (SELECT IDplate, count(id) c FROM Plant Group by IDplate ) cnt;
 
 
-##Nombre de boîtes par milieu ca marche pas encore
+##Nombre de boîtes par milieu 
 
 
-SELECT IDMedium, sum(cnt.c)
+SELECT IDmedium as Milieu ,count(distinct  IDplate) as Nbr 
+FROM Plant, Plate 
+WHERE Plant.IDplate=Plate.ID 
+GROUP BY Plate.IDmedium; 
+
+
+##Nombre de boîtes par génotype 
+
+SELECT IDgen as Genotype ,count(distinct IDplate) AS nBR 
 FROM Plant 
-WHERE (SELECT IDmedium,IDgen, count(distinct plate) c FROM Plant Group by IDmedium,IDgen;) cnt
-Group by IDmedium;
-
-
-SELECT sum(cnt.c)
-FROM (SELECT IDmedium,IDgen, count(distinct plate) c FROM Plant Group by IDmedium,IDgen;) cnt
-Group by IDmedium;
-
-SELECT IDmedium,IDgen, count(distinct plate)
-FROM Plant
-Group by IDmedium,IDgen;
+GROUP BY IDgen; 
 
 
 
-SELECT IDmedium, count(distinct plate) c FROM Plant Group by IDmedium,IDgen HAVING IDmedium;
+##Nombre de boîtes par génotype et par milieu 
 
-SELECT IDmedium, count(distinct plate) c FROM Plant Group by IDmedium;
+SELECT IDgen as Genotype, IDmedium as Milieu ,count(distinct IDplate) as Nbr 
+FROM Plant, Plate 
+WHERE Plant.IDplate=Plate.ID 
+GROUP BY Plant.IDgen, Plate.IDmedium; 
+
+
+
