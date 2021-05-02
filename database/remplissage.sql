@@ -86,14 +86,6 @@ VALUES
 ('10','PO_0020100'),
 ('11','PATO_0001323');
 
-INSERT INTO Vocabular(ID, def)
-VALUES
-('1', 'Plant Ontology'),
-('2', 'Phenotype And Trait Ontology'),
-('3', 'Flora Phenotype Ontology'),
-('4', 'Plant Trait Ontology'),
-('5', 'Brassica Ontology');
-
 
 
 INSERT INTO Gene(ID,name,def)
