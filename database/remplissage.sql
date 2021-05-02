@@ -51,8 +51,6 @@ VALUES
 
 
 
-
-
 LOAD DATA LOCAL INFILE './table_plate.csv'
 INTO TABLE Plate
 FIELDS TERMINATED BY ';' LINES TERMINATED BY '\n' (ID,IDmedium);
@@ -67,8 +65,6 @@ FIELDS TERMINATED BY ';' LINES TERMINATED BY '\n' (ID,groupe,pg,IDplate,IDgen);
 LOAD DATA LOCAL INFILE './table_mesure.csv' 
 INTO TABLE Mesure
 FIELDS TERMINATED BY ';' LINES TERMINATED BY '\n' (IDfeature, IDplant, value);
-
-
 
 
 
@@ -90,22 +86,44 @@ VALUES
 ('10','PO_0020100'),
 ('11','PATO_0001323');
 
+INSERT INTO Vocabular(ID, def)
+VALUES
+('1', 'Plant Ontology'),
+('2', 'Phenotype And Trait Ontology'),
+('3', 'Flora Phenotype Ontology'),
+('4', 'Plant Trait Ontology'),
+('5', 'Brassica Ontology');
 
 
 
+INSERT INTO Gene(ID,name,def)
+VALUES
+('1', 'PGM','phosphoglucomutase'),
+('2', 'SEX1','starch excess 1'),
+('3', 'NRT2.5','high affinity nitrate transporter 2.5'),
+('4', 'NRT2.6','High affinity nitrate transporter 2.6'),
+('5', 'pgm','phosphoglucomutase mutant'),
+('6', 'sex1','starch excess 1 mutant'),
+('7', 'nrt2.5','high affinity nitrate transporter 2.5 mutant'),
+('8', 'nrt2.6','High affinity nitrate transporter 2.6 mutant');
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+INSERT INTO Associate(geneID, genotypeID)
+VALUES
+('1','Col_0'),
+('2','Col_0'),
+('3','Col_0'),
+('4','Col_0'),
+('1','nrt'),
+('2','nrt'),
+('7','nrt'),
+('8','nrt'),
+('1','sex1'),
+('6','sex1'),
+('3','sex1'),
+('4','sex1'),
+('5','pgm'),
+('2','pgm'),
+('3','pgm'),
+('4','pgm');
