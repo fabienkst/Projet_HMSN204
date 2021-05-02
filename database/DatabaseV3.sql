@@ -66,9 +66,11 @@ CREATE table Term(
 
 
 CREATE table Gene(
-	ID varchar(10) primary key,
-	name varchar (100)
+	ID varchar(3) primary key,
+	name varchar(10),
+	def varchar(50)
 );
+
 
 
 CREATE TABLE Associate(
