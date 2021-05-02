@@ -3,6 +3,14 @@
 from Bio.Seq import Seq
 from Bio import SeqIO
 import numpy as np
+import subprocess
+import os
+
+
+#################################recupération des séqs########################################
+
+os.system("./wrapper_wt_2_0.py")
+os.system("./wrapper_mutant_2_0.py")
 
 
 #################################declaration########################################
