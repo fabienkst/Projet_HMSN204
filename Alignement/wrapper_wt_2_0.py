@@ -7,7 +7,7 @@ import ssl
 ssl._create_default_https_context = ssl._create_unverified_context
 import requests, os, sys
 
-os.system("clear")
+#os.system("clear")
 
 print ('donner l_acronyme en majuscule du gène voulu')
 gene=""
