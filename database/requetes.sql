@@ -77,11 +77,11 @@ WHERE Plant.ID=Mesure.IDplant AND Mesure.IDfeature=Feature.ID AND Plant.IDplate 
 GROUP BY Plate.IDmedium, Plant.IDgen;
 
 
-#Les plantes qui ont la valeur en chlorphile la plus base
+#Les plantes ayant un génotype pgm qui ont la teneur maximale en chlorophylle 
 
 SELECT IDplant,value
 FROM Mesure, Feature
-WHERE Mesure.IDfeature = Feature.ID AND Feature.label = 'clorophyll' AND Mesure.value = (Select MIN(value) FROM Mesure,Feature WHERE Mesure.IDfeature = Feature.ID AND Feature.label = 'clorophyll');
+WHERE Mesure.IDfeature = Feature.ID AND Feature.label = 'clorophyll' AND Mesure.value = (Select MAX(value) FROM Mesure,Feature,Plant,Genotype WHERE  Mesure.IDfeature = Feature.ID AND Mesure.IDplant = Plant.ID AND Feature.label = 'clorophyll' AND IDgen = 'pgm');
 
 
 
@@ -112,3 +112,11 @@ SELECT IDgen,MIN(value), MAX(value)
 FROM Mesure,Feature,Plant
 WHERE Mesure.IDfeature = Feature.ID AND Mesure.IDplant = Plant.ID AND Feature.label = 'PR length'
 GROUP BY IDgen;
+
+
+
+
+
+
+
+
