@@ -115,5 +115,5 @@ source remplissage.sql
 Le fichier ```script_genere_tables_remplissage_mesure_plant_plate.py``` à permis de générer des fichiers .csv ```table_mesure.csv, table_plant.csv, table_plate.csv``` permettant de remplir les tables Mesure, Plant et Plate de la base de données.
 Il se lance ave la commande suivante :
 ```bash
-./script_genere_tables_remplissage_mesure_plant_plate.py fichier_contenant_les_données_brutes.csv
+./script_genere_tables_remplissage_mesure_plant_plate.py Data_Projet_Entete.csv
 ```
