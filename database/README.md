@@ -1,7 +1,7 @@
 # PROJET HMSN204 - Partie Base de Données
 KON-SUN-TACK Fabien, BATTISTEL Clementine, BOUVIER Quentin, MARCO Corentin
 
-### Mise en place d'une espace de travail Mysql pour Unbuntu 18.04 et supérieur :
+## Mise en place d'une espace de travail Mysql pour Unbuntu 18.04 et supérieur :
 
 (1) Ouvrir un terminal de commande.
 
@@ -33,7 +33,7 @@ Dans votre terminal mysql>  s’affiche.
 (14) Choisir la base de données que vous voulez utiliser : 
 mysql> USE nom_de_la_base;
 
-### Avant utilisation de la base de données :
+## Avant utilisation de la base de données :
 
 (1) Ouvrir Mysql en mode administrateur root : $ sudo mysql -u root -p
 (2) Quand Mysql est ouvert faire : SET GLOBAL local_infile=true;
@@ -41,7 +41,7 @@ mysql> USE nom_de_la_base;
 (4) Se connecter à Mysql avec la commande : mysql --local_infile=1 −u nom_utilisateur -p
 Voila vous pouvez utilisez notre base de données convenablement
 
-#### Implémentation et peuplement de la base de données
+## Implémentation et peuplement de la base de données
 
 (1) Ouvrir un terminal avec pour chemin le dossier où se trouve les dossiers DatabaseV3.sql,remplissage.sql,table_plant.csv,table_plate.csv,table_mesure.csv ou crée se dossier. $ cd le_chemin_dossier
 (2) Se connecter à Mysql : mysql --local_infile=1 −u nom_utilisateur -p 
