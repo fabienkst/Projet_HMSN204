@@ -4,8 +4,8 @@ Le but de ce projet est de proposer des outils pour le stockage et l'analyse des
 
 ## Contenu du dossier Git
 
-- Création de la base de données: ```database```
+- Création de la base de données: ```Base_de_Données```
 - Traitements en BioPython: ```Alignement```
-- Anciennes versions: ```log```
-- Documents nécessaires au rapport: ```Projet_HMSN204_2```
+- Anciennes versions: ```historique```
+- Documents nécessaires au rapport: ```Rapport_LaTeX```
 
