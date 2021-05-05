@@ -1,7 +1,7 @@
 # PROJET HMSN204 - README Partie Alignement
 KON-SUN-TACK Fabien, BATTISTEL Clementine, BOUVIER Quentin, MARCO Corentin
 
-Scripts disponibles dans le dossier Alignement:
+## Scripts disponibles dans le dossier Alignement:
 1. wrapper_wt_2_0.py
 1. wrapper_mutant_2_0.py
 1. blaster.py
