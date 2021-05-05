@@ -90,7 +90,7 @@ Voila vous pouvez utilisez notre base de données convenablement
 
 ## Implémentation et peuplement de la base de données
 
-1. Ouvrir un terminal avec pour chemin le dossier où se trouve les dossiers ```DatabaseV3.sql,remplissage.sql,table_plant.csv,table_plate.csv,table_mesure.csv``` ou crée ce dossier.
+1. Ouvrir un terminal avec pour chemin le dossier où se trouve les dossiers ```DatabaseV3.sql, remplissage.sql, table_plant.csv, table_plate.csv, table_mesure.csv``` ou crée ce dossier.
 ```bash
 cd le_chemin_dossier
 ```
@@ -109,3 +109,11 @@ source remplissage.sql
 5. Vous pouvez maintenant tapez vos requêtes SQL.
 
 6. Nous avons mis à votre disposition un ensemble de requêtes SQL dans le fichier ```requetes.sql```
+
+## Fichier complémentaire
+
+Le fichier ```script_genere_tables_remplissage_mesure_plant_plate.py``` à permis de générer des fichiers .csv ```table_mesure.csv, table_plant.csv, table_plate.csv``` permettant de remplir les tables Mesure, Plant et Plate de la base de données.
+Il se lance ave la commande suivante :
+```bash
+./script_genere_tables_remplissage_mesure_plant_plate.py fichier_contenant_les_données_brutes.csv
+```
