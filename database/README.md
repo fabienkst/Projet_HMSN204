@@ -90,7 +90,7 @@ Voila vous pouvez utilisez notre base de données convenablement
 
 ## Implémentation et peuplement de la base de données
 
-1. Ouvrir un terminal avec pour chemin le dossier où se trouve les dossiers ```DatabaseV3.sql,remplissage.sql,table_plant.csv,table_plate.csv,table_mesure.csv``` ou crée se dossier.
+1. Ouvrir un terminal avec pour chemin le dossier où se trouve les dossiers ```DatabaseV3.sql,remplissage.sql,table_plant.csv,table_plate.csv,table_mesure.csv``` ou crée ce dossier.
 ```bash
 cd le_chemin_dossier
 ```
@@ -106,6 +106,6 @@ source DatabaseV3.sql
 ```sql
 source remplissage.sql
 ```
-5. Vous pouvez maintenant tapez vos requête SQL.
+5. Vous pouvez maintenant tapez vos requêtes SQL.
 
 6. Nous avons m'y à votre disposition un ensemble de requêtes SQL dans le fichier ```requetes.sql```
