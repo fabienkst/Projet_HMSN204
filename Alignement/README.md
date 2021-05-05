@@ -13,8 +13,10 @@ KON-SUN-TACK Fabien, BATTISTEL Clementine, BOUVIER Quentin, MARCO Corentin
 - Script pour l'alignement global par paires: ```alignementGlobalBeau.py```
 	Nécessite les scripts pour la récupération des séquences
 	Pour l'exécuter, lancer le terminal, puis écrire les lignes suivantes:
-	```cd chemin/vers/dossier/Alignement```
-	```./alignementGlobalBeau.py```
+	```bash
+	cd chemin/vers/dossier/Alignement
+	./alignementGlobalBeau.py
+	```
 
 - Script pour l'exécution du BLAST: blaster.py
 	Pour l'exécuter, lancer le terminal, puis écrire les lignes suivantes:
