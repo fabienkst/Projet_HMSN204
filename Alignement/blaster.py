@@ -5,11 +5,6 @@ from Bio.Blast import NCBIWWW
 from Bio.Blast import NCBIXML
 
 
-
-os.system("./wrapper_wt_2_0.py")
-
-
-
 allhsp=[]
 final0=[]
 final1=[]

@@ -27,7 +27,7 @@ list_id = monres["IdList"]
 fichierseq = Entrez.efetch(db="nucleotide", id=list_id, rettype = "gb")
 messeq = SeqIO.parse(fichierseq, "gb")
 
-SeqIO.write(messeq,"out_21.fasta", "fasta")
+SeqIO.write(messeq,"out_2.fasta", "fasta")
 
 fichierseq.close()
 
