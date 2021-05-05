@@ -21,7 +21,7 @@ KON-SUN-TACK Fabien, BATTISTEL Clementine, BOUVIER Quentin, MARCO Corentin
 	./alignementGlobalBeau.py
 	```
 
-- Script pour l'exécution du BLAST: blaster.py
+- Script pour l'exécution du BLAST: ```blaster.py```
 	Pour l'exécuter, lancer le terminal, puis écrire les lignes suivantes:
 	```bash
 	cd chemin/vers/dossier/Alignement
