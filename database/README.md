@@ -108,4 +108,4 @@ source remplissage.sql
 ```
 5. Vous pouvez maintenant tapez vos requête SQL.
 
-6. Nous avons m'y à votre disposition un ensemble de requêtes SQL dans le fichier requetes.sql
+6. Nous avons m'y à votre disposition un ensemble de requêtes SQL dans le fichier ```requetes.sql```
