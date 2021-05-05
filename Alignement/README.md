@@ -7,7 +7,7 @@ KON-SUN-TACK Fabien, BATTISTEL Clementine, BOUVIER Quentin, MARCO Corentin
 1. blaster.py
 1. alignementGlobalBeau.py
 
-- Scripts pour la récupération des séquences : ```wrapper_wt_2_0.py |||| wrapper_mutant_2_0.py```
+- Scripts pour la récupération des séquences : ```bash wrapper_wt_2_0.py |||| wrapper_mutant_2_0.py```
 
 
 - Script pour l'alignement global par paires: ```alignementGlobalBeau.py```
@@ -20,5 +20,7 @@ KON-SUN-TACK Fabien, BATTISTEL Clementine, BOUVIER Quentin, MARCO Corentin
 
 - Script pour l'exécution du BLAST: blaster.py
 	Pour l'exécuter, lancer le terminal, puis écrire les lignes suivantes:
-	```cd chemin/vers/dossier/Alignement```
-	```./blaster.py```
+	```bash
+	cd chemin/vers/dossier/Alignement
+	./blaster.py
+	```
