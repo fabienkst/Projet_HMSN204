@@ -98,11 +98,11 @@ cd le_chemin_dossier
 ```bash
 mysql --local_infile=1 −u nom_utilisateur -p 
 ```
-3. Lancer le script DatabaseV3.sql : 
+3. Lancer le script ```DatabaseV3.sql``` : 
 ```sql
 source DatabaseV3.sql
 ```
-4. Lancer le script remplissage.sql : 
+4. Lancer le script ```remplissage.sql``` : 
 ```sql
 source remplissage.sql
 ```
