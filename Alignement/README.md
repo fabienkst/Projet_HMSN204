@@ -7,7 +7,7 @@ KON-SUN-TACK Fabien, BATTISTEL Clementine, BOUVIER Quentin, MARCO Corentin
 1. blaster.py
 1. alignementGlobalBeau.py
 
-- Scripts pour la récupération des séquences: wrapper_wt_2_0.py |||| wrapper_mutant_2_0.py
+- Scripts pour la récupération des séquences: ```wrapper_wt_2_0.py |||| wrapper_mutant_2_0.py```
 
 
 - Script pour l'alignement global par paires: alignementGlobalBeau.py
