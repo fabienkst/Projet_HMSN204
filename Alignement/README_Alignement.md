@@ -19,10 +19,10 @@
 
 
 Scripts disponibles dans le dossier Alignement:
-	- wrapper_wt_2_0.py
-	- wrapper_mutant_2_0.py
-	- blaster.py
-	- alignementGlobalBeau.py
+1. wrapper_wt_2_0.py
+1. wrapper_mutant_2_0.py
+1. blaster.py
+1. alignementGlobalBeau.py
 
 - Scripts pour la récupération des séquences: wrapper_wt_2_0.py |||| wrapper_mutant_2_0.py
 
