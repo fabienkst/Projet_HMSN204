@@ -3,7 +3,9 @@
 from Bio import SeqIO
 from Bio.Blast import NCBIWWW
 from Bio.Blast import NCBIXML
+import os
 
+os.system("./wrapper_wt_2_0.py")
 
 allhsp=[]
 final0=[]
@@ -24,7 +26,7 @@ final1.append(list_hsp[1].title)
 #final.append(list_hsp[1].evalue)
 
 blastresult.close()
-print ('meilleur alignement (attention, il s_agit surement de la même séquence)')
+print ('meilleur alignement (attention, il s_agit sûrement de la même séquence)')
 print(final0)
 print ('\n'+'deuxième meilleur alignement')
 print(final1)
