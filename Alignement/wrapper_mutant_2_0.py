@@ -7,7 +7,7 @@ import ssl
 ssl._create_default_https_context = ssl._create_unverified_context
 import requests, os, sys
 
-print ('donner ne numéro d_accession du gène mutant voulu')
+print ('donner le numéro d_accession du gène mutant voulu')
 print ('note: le mutant pgm a pour numéro AB010074')
 gene=""
 recherche=""
